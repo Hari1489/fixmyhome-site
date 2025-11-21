@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FixMyHome - Electrician & Plumber Services</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; }
+        header {
+            background: linear-gradient(270deg, #007bff, #4fc3f7, #007bff);
+            background-size: 600% 600%;
+            animation: gradientMove 8s ease infinite;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        .header-content {
+            opacity: 0;
+            animation: fadeInHeader 1.5s ease forwards;
+        }
+        @keyframes fadeInHeader {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes gradientMove {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+        nav { background: #fff; padding: 10px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; }
+        nav a { margin: 0 15px; text-decoration: none; color: #007bff; font-weight: bold; }
+        .hero { padding: 50px 20px; background: #e8f2ff; text-align: center; }
+        .hero h1 { font-size: 32px; color: #ffffff; }
+        .hero h4 { color: #ffffff; }
+        .section { 
+            padding: 40px 20px; 
+            max-width: 800px; 
+            margin: auto; 
+            background: #e3f2fd; 
+            margin-top: 20px; 
+            border-radius: 10px; 
+            box-shadow: 0 2px 8px rgba(21,101,192,0.12); 
+        }
+        .btn { 
+            display: inline-block; 
+            padding: 12px 18px; 
+            background: #1565c0; 
+            color: #fffde7; 
+            border-radius: 5px; 
+            text-decoration: none; 
+            box-shadow: 0 2px 8px rgba(21,101,192,0.15);
+            transition: background 0.3s, transform 0.3s;
+        }
+        .btn:hover {
+            background: #42a5f5;
+            transform: scale(1.05);
+        }
+        footer { 
+            margin-top: 40px; 
+            background: #1565c0; 
+            color: #fffde7; 
+            padding: 15px; 
+            text-align: center; 
+        }
+        .header-icon {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+            animation: spinIcon 2s linear infinite;
+        }
+        @keyframes spinIcon {
+            0% { transform: rotate(0deg);}
+            100% { transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <h1>FixMyHome</h1>
+        <p>Your Trusted Electrician & Plumber Services</p>
+    </div>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#appointment">Book</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" style="background:url('https://i.imgur.com/9bKQK5V.jpeg') center/cover no-repeat; color:white; text-shadow:1px 1px 4px rgba(0,0,0,0.6);">
+    <h1 style="color:#1565c0;">Fast & Reliable Home Repair</h1>
+    <h4 style="color:#1565c0;">Book trusted electricians and plumbers in one click.</h4>
+</section>
+
+<section id="about" class="section">
+    <h2>About Us</h2>
+    <p>FixMyHome is created to help people easily book reliable electricians and plumbers. We make the process simple—just fill out a quick appointment form.</p>
+</section>
+
+<section id="services" class="section">
+    <h2>Our Services</h2>
+    <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center;">
+        <div style="width:250px; background:white; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.15); padding:20px; text-align:center;">
+            <img src="assets/electrician.png" style="width:100%; border-radius:8px;" />
+            <h3>Electrician</h3>
+            <p>Wiring, installations, repairs & more.</p>
+        </div>
+        <div style="width:250px; background:white; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.15); padding:20px; text-align:center;">
+            <img src="assets/plumber.png" style="width:100%; border-radius:8px;" alt="Plumber" />
+            <h3>Plumber</h3>
+            <p>Leak fixing, bathroom repairs, pipeline issues.</p>
+        </div>
+    </div>
+</section>
+
+<section id="appointment" class="section">
+    <h2>Book an Appointment</h2>
+    <p>Click below to fill the appointment form.</p>
+    <a class="btn" href="https://forms.gle/Enp82NYAiSRxsef2A" target="_blank">Book Now</a>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p><strong>Phone:</strong> +91 8883326867</p>
+    <p><strong>Location:</strong> Lalgudi, Trichy, Tamilnadu</p>
+</section>
+
+<footer>
+    <p>© 2025 FixMyHome. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
